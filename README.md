@@ -1,4 +1,5 @@
 # ML for Thermal Engineers
+Machine Learning for Automotive Thermal Systems
 
 This repository documents a structured learning journey into **Machine Learning and AI from the perspective of a thermal systems engineer**.
 
