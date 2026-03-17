@@ -122,7 +122,7 @@ I’d love to hear your thoughts and feedback.
 
 ---
 
-[## 🔗 Connect](www.linkedin.com/in/srikantan-natarajan/)
+[## 🔗 Connect]
 
 Feel free to connect with me on LinkedIn to discuss:
 
@@ -130,4 +130,4 @@ Feel free to connect with me on LinkedIn to discuss:
 - machine learning applications  
 - automotive HVAC challenges  
 
-[INSERT LINKEDIN PROFILE LINK]
+[www.linkedin.com/in/srikantan-natarajan/]
