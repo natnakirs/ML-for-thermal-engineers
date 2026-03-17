@@ -122,7 +122,7 @@ I’d love to hear your thoughts and feedback.
 
 ---
 
-[## 🔗 Connect]
+## 🔗 Connect
 
 Feel free to connect with me on LinkedIn to discuss:
 
