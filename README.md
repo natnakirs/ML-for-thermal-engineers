@@ -1,130 +1,133 @@
-# ML for Thermal Engineers
+# Machine Learning for Thermal Engineers
 
-Machine learning concepts explained through **thermal systems engineering examples**.
-
-This repository documents a structured journey into **Machine Learning and AI from the perspective of an automotive thermal systems engineer**.
-
-The goal is to bridge ideas from:
-
-- Automotive HVAC systems  
-- Vehicle thermal management  
-- System identification and calibration  
-- Data-driven modeling  
-
-with modern **Machine Learning techniques**.
+A hands-on learning repository exploring how machine learning concepts can be applied to real-world thermal engineering problems — with a focus on automotive HVAC systems.
 
 ---
 
-## Why Machine Learning for Thermal Engineers?
+## 🔍 Overview
 
-Thermal engineers frequently model relationships such as:
+This repository documents a structured learning journey through machine learning fundamentals, built from the perspective of a thermal systems engineer.
 
-- Ambient temperature → compressor power  
-- Cabin conditions → comfort perception  
-- Battery temperature → cooling demand  
-- Solar load → cabin heat gain  
+Rather than using generic datasets, the focus is on:
 
-Traditionally these relationships are captured using:
-
-- empirical equations  
-- calibration maps  
-- curve fitting  
-- system identification  
-
-Machine learning extends this idea by allowing models to **learn these relationships directly from data**.
+- applying ML to physically meaningful problems  
+- connecting engineering intuition with data-driven models  
+- building interpretable models aligned with real system behavior  
 
 ---
 
-## Example Concept
+## 🚗 Featured Notebook
 
-```
-Ambient Temperature + Solar Load + Cabin Conditions
-                ↓
-        Machine Learning Model
-                ↓
-      Predicted Compressor Power
-```
+### Physics-Informed HVAC Cooling Predictor
 
-A machine learning model can learn relationships between environmental conditions and HVAC system behavior.
+This notebook demonstrates how machine learning can be used to model HVAC compressor power using engineering-informed features.
 
----
+#### Key Concepts:
+- Temperature error as base cooling demand  
+- Solar load as an amplification factor  
+- Interaction features (CoolingIndex = TempError × SolarLoad)  
+- Feature scaling for fair comparison  
+- Ridge regression for stability  
 
-## Repository Structure
+#### Key Insight:
+Instead of relying on raw variables, the model learns that **interaction between temperature error and solar load** plays a dominant role in cooling demand — closely reflecting real HVAC behavior during solar soak conditions.
 
-```
-ML-for-thermal-engineers/
-
-README.md
-
-notebooks/
-    01_linear_regression_basics.ipynb
-    02_gradient_descent.ipynb
-    03_overfitting.ipynb
-    04_multivariable_regression.ipynb
-```
-
-Each notebook introduces a concept and demonstrates it using **engineering-inspired examples**.
+🔗 Open Notebook:  
+[www.github.com/natnakirs/ML-for-thermal-engineers/blob/main/notebooks/08_HVAC_Cooling_Predictor_Model.ipynb]
 
 ---
 
-## Lessons Overview
+## 📘 Lessons Covered
 
-| Lesson | Topic | Key Concept |
-|------|------|------|
-| 01 | Linear Regression | Learning relationships from data |
-| 02 | Gradient Descent | How models learn parameters |
-| 03 | Overfitting | When models learn noise |
-| 04 | Multivariable Regression | Learning relationships from multiple inputs |
-| 05 | Feature Engineering | Designing meaningful input variables |
+### 1. Linear Regression Basics
+- Understanding relationships between variables  
+- Connecting regression to engineering curve fitting  
 
----
+### 2. Gradient Descent
+- Optimization fundamentals  
+- Learning rate and convergence behavior  
 
-## Learning Philosophy
+### 3. Overfitting
+- Model complexity vs generalization  
+- Bias-variance tradeoff  
 
-Each notebook follows a consistent structure:
+### 4. Multivariable Regression
+- Multiple inputs affecting system behavior  
+- Extending simple models to realistic systems  
 
-1. Problem Motivation  
-2. Mathematical Intuition  
-3. Engineering Analogy  
-4. Python Implementation  
-5. Visualization  
-6. Key Takeaways  
+### 5. Feature Engineering
+- Creating meaningful variables (e.g., TempError)  
+- Using engineering insight to improve models  
 
-The goal is to **connect machine learning concepts with real engineering intuition**.
+### 6. Regularization (Ridge & Lasso)
+- Handling correlated features  
+- Stabilizing models  
+- Automatic feature selection  
 
----
+### 7. Feature Scaling & Normalization
+- Why scaling matters  
+- Interpreting coefficients correctly  
+- Ensuring fair regularization  
 
-## Example Applications
-
-Examples explored in this repository may include:
-
-- Compressor power prediction  
-- Cabin comfort modeling  
-- Thermal load estimation  
-- EV battery thermal behavior  
-- Energy optimization in vehicle climate systems  
-
----
-
-## Tools Used
-
-The notebooks use common Python ML tools including:
-
-- numpy  
-- matplotlib  
-- scikit-learn  
-
-All notebooks are designed to run easily in **Google Colab**.
+### 8. HVAC Cooling Predictor (Applied ML)
+- Combining all concepts into a real engineering problem  
+- Physics-informed feature design  
+- Interpretable machine learning model  
 
 ---
 
-## Author
+## 🧠 Learning Philosophy
 
-Srikantan Natarajan  
-Automotive Systems Engineer – HVAC / Thermal Systems
+This repository follows a simple idea:
+
+> Machine learning becomes significantly more powerful when combined with domain expertise.
+
+Instead of treating ML as a black box:
+
+- physics guides feature design  
+- models are interpreted, not just trained  
+- results are validated against real-world intuition  
 
 ---
 
-## Status
+## ⚙️ Tools Used
 
-This repository is an evolving **learning journal** and will continue to grow as new machine learning concepts and experiments are added.
+- Python  
+- NumPy & Pandas  
+- Matplotlib  
+- Scikit-learn  
+- Google Colab  
+
+---
+
+## 🚀 Future Work
+
+- Time-dependent cabin cooling models  
+- Incorporation of thermal mass effects  
+- Control-oriented ML models for HVAC systems  
+- Integration with real-world datasets  
+
+---
+
+## 🤝 Contributions & Feedback
+
+If you're working in:
+
+- thermal systems  
+- automotive HVAC  
+- controls engineering  
+- applied machine learning  
+
+I’d love to hear your thoughts and feedback.
+
+---
+
+[## 🔗 Connect](www.linkedin.com/in/srikantan-natarajan/)
+
+Feel free to connect with me on LinkedIn to discuss:
+
+- thermal systems engineering  
+- machine learning applications  
+- automotive HVAC challenges  
+
+[INSERT LINKEDIN PROFILE LINK]
